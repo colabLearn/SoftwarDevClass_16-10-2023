@@ -1,4 +1,6 @@
 #include "Employee.h"
+#include <iostream>
+using namespace std;
 
 Employee::Employee(string inName, int inID)
 {
@@ -10,6 +12,9 @@ string Employee::getName()
 void Employee::setName(string inName) 
 	{ this->name = inName; }
 int Employee::getId() { return  this->id; }
-void setId();
-void printInfo();
-
+void Employee::setId(int inID) { this->id = inID; }
+void Employee::printInfo()
+{
+	cout << "Name: " << getName() << endl;
+	cout << "Id: " << getId << endl;
+}
